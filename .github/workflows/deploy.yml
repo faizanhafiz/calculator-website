@@ -19,7 +19,7 @@ jobs:
           node-version: 20
 
       - name: Install cloudflare
-        run: npm install @opennextjs/cloudflare@latest
+        run: npm install 
       
       - name: Install Wrangler
         run: npm install -g wrangler
