@@ -5,7 +5,7 @@ import StaticContent from './StaticContent';
 export const metadata: Metadata = {
   title: 'Body Fat Calculator - Calculate Your Body Fat Percentage | Zenicalculator',
   description:
-    'Use our free Body Fat Calculator to estimate your body fat percentage using methods like BMI, Navy, and tape. Understand your fitness level now.',
+    'Use free Body Fat Calculator to estimate your body fat percentage using methods like BMI, Navy, and tape. Understand your fitness level now.',
   keywords: [
     'Body Fat Calculator',
     'Body Fat Percentage',

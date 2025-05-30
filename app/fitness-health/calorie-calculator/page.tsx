@@ -3,16 +3,16 @@ import dynamic from 'next/dynamic';
 import StaticContent from './StaticContent';
  
 export const metadata: Metadata = {
-  title: 'Calorie Calculator - Calculate Your Daily Calorie Needs | Zenicalculator',
+  title: 'Free Calorie Calculator - Discover Your Daily Needs| Zenicalculator',
   description:
-    'Use our free Calorie Calculator to determine your daily calorie needs based on your age, height, weight, gender, and activity level.',
+    'Use our simple and accurate calorie calculator to determine your daily calorie needs based on your age, height, weight, gender, and activity level.',
     keywords: [
       'Calorie Calculator',
       'Calories',
       'Calorie calculator for women'
     ],
   openGraph: {
-    title: 'Calorie Calculator - Zenicalculator',
+    title: 'Calorie Calculator – Estimate Your Daily Calorie Needs - Zenicalculator',
     description: 'Easily calculate your daily calorie needs based on your age, height, weight, gender, and activity level.',
     url: 'https://zenicalculator.com/fitness-health/calorie-calculator',
     siteName: 'Zenicalculator',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Calorie Calculator - Zenicalculator',
+    title: 'Calorie Calculator – Estimate Your Daily Calorie Needs - Zenicalculator',
     description: 'Determine your daily calorie needs based on your age, height, weight, gender, and activity level.',
     images: ['https://zenicalculator.com/og-images/calorie-calculator.png'],
   },

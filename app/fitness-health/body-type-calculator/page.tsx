@@ -4,22 +4,22 @@ import StaticContent from './StaticContent';
 import WaistHipCalculator from './WaistHipCalculator'
 
 export const metadata: Metadata = {
-  title: 'BMI Calculator - Calculate Your Body Mass Index | Zenicalculator',
+  title: 'Body Type Calculator – Find Your Ectomorph, Mesomorph, or Endomorph Type',
   description:
-    'Use our free BMI Calculator to determine your Body Mass Index. Understand your health status based on your weight and height.',
+    "Discover your body type with our free Body Type Calculator. Quickly find out if you're an ectomorph, mesomorph, or endomorph based on your measurements. Get personalized fitness, diet, and workout tips tailored to your body type. Start your health journey today!",
     keywords: [
-      'BMI Calculator',
-      'BMI',
-      'Bmi calculator for women'
+      'body type',
+      'body type calculator',
+      'body shape'
     ],
   openGraph: {
-    title: 'BMI Calculator - Zenicalculator',
-    description: 'Easily calculate your BMI and assess your weight category with our accurate tool.',
-    url: 'https://calculatorhub.com/fitness-health/bmi',
+    title: 'Body Type Calculator – Find Your Ectomorph, Mesomorph, or Endomorph Type',
+    description: 'Find your body type – ectomorph, mesomorph, or endomorph – with our free Body Type Calculator. Get custom fitness and diet tips today!',
+    url: 'https://Zenicalculator.com/fitness-health/body-type-caculator',
     siteName: 'CalculatorHub',
     images: [
       {
-        url: 'https://calculatorhub.com/og-images/bmi.png',
+        url: 'https://Zenicalculator.com/og-images/bmi.png',
         width: 1200,
         height: 630,
         alt: 'BMI Calculator on CalculatorHub',
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BMI Calculator - CalculatorHub',
-    description: 'Determine your Body Mass Index using height and weight. Accurate and fast.',
+    title: 'Body Type Calculator – Find Your Ectomorph, Mesomorph, or Endomorph Type',
+    description: 'Find your body type – ectomorph, mesomorph, or endomorph – with our free Body Type Calculator. Get custom fitness and diet tips today!',
     images: ['https://Zenicalculator.com/og-images/bmi.png'],
   },
 };

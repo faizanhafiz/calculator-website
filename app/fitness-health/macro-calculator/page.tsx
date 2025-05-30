@@ -3,8 +3,8 @@ import MacroCalculator from './MacroCalculator';
 import StaticContent from './StaticContent';
 
 export const metadata: Metadata = {
-  title: 'Macronutrient Calculator - Calculate Your Daily Macros | Zenicalculator',
-  description: 'Calculate your daily macronutrient needs based on your weight, height, age, activity level, and fitness goals. Get personalized protein, carbs, and fat recommendations.',
+  title: 'Free & Easy Macronutrient Calculator - Find Your Daily Macros| Zenicalculator',
+  description: 'New to tracking macros? Our simple macronutrient calculator makes it easy to find your ideal protein, carb, and fat intake. Get your free calculation instantly!',
   keywords: [
     'Macro Calculator',
     'Macronutrient Calculator',
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     'Nutrition Calculator'
   ],
   openGraph: {
-    title: 'Macronutrient Calculator - CalculatorHub',
-    description: 'Calculate your daily macronutrient needs based on your weight, height, age, activity level, and fitness goals.',
+    title: 'Free & Easy Macronutrient Calculator - Find Your Daily Macros| Zenicalculator',
+    description: 'New to tracking macros? Our simple macronutrient calculator makes it easy to find your ideal protein, carb, and fat intake. Get your free calculation instantly!',
     url: 'https://zenicalculator.com/fitness-health/macro-calculator',
     siteName: 'CalculatorHub',
     images: [
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Macronutrient Calculator - Zenicalculator',
-    description: 'Calculate your daily macronutrient needs based on your weight, height, age, activity level, and fitness goals.',
+    title: 'Free & Easy Macronutrient Calculator - Find Your Daily Macros| Zenicalculator',
+    description: 'New to tracking macros? Our simple macronutrient calculator makes it easy to find your ideal protein, carb, and fat intake. Get your free calculation instantly!',
     images: ['https://zenicalculator.com/og-images/macro-calculator.png'],
   },
 };
