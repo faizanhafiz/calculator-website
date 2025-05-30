@@ -8,7 +8,7 @@ export default function Footer() {
   const footerLinks = [
     { href: '/about-us', label: 'About Us' },
     { href: '/contact', label: 'Contact' },
-    { href: '/sitemap', label: 'Sitemap' }
+    { href: '/sitemap.xml', label: 'Sitemap' }
   ]
 
   return (
