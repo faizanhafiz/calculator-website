@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
 import Link from 'next/link';
 
 // ─── Formspree Setup ──────────────────────────────────────────────────────────
 // 1. Sign up FREE at https://formspree.io using faizanhafiz928@gmail.com
 // 2. Create a new form → copy the form ID from your endpoint URL
 //    e.g. if endpoint is https://formspree.io/f/xrgvkpqb → ID is "xrgvkpqb"
-// 3. Replace YOUR_FORM_ID below with your actual form ID
+// 3. Replace YOUR_FORM_ID below with your actual ID
 const FORMSPREE_FORM_ID = 'xojkvopl'; // e.g. 'xrgvkpqb'
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -36,9 +35,40 @@ const faqs = [
 ];
 
 export default function ContactForm() {
-  const [state, handleFormspreeSubmit] = useForm(FORMSPREE_FORM_ID);
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [subject, setSubject] = useState('');
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  }
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus('submitting');
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name:    formData.name,
+          email:   formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      if (res.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
+  }
 
   return (
     <main className="min-h-screen bg-white pt-24 md:px-8 lg:px-16 max-w-7xl mx-auto font-inter">
@@ -61,10 +91,7 @@ export default function ContactForm() {
             <div className="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
               <div className="text-4xl mb-3">📧</div>
               <h3 className="font-bold text-gray-800 text-lg mb-1">Email Us</h3>
-              <a
-                href="mailto:faizanhafiz928@gmail.com"
-                className="text-blue-700 font-medium hover:underline text-sm break-all"
-              >
+              <a href="mailto:faizanhafiz928@gmail.com" className="text-blue-700 font-medium hover:underline text-sm break-all">
                 faizanhafiz928@gmail.com
               </a>
             </div>
@@ -84,127 +111,116 @@ export default function ContactForm() {
           <section>
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
 
-            {state.succeeded ? (
+            {status === 'success' ? (
               <div className="bg-green-50 border border-green-200 rounded-2xl p-10 text-center">
                 <div className="text-5xl mb-4">✅</div>
                 <h3 className="text-2xl font-bold text-green-800 mb-2">Message Sent!</h3>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-lg mb-6">
                   Thank you for reaching out. We will get back to you within 1–2 business days.
                 </p>
+                <button
+                  onClick={() => setStatus('idle')}
+                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                >
+                  Send Another Message
+                </button>
               </div>
             ) : (
-              <div
-                className="bg-gray-50 border border-gray-100 rounded-2xl p-8 space-y-6"
-                onSubmit={handleFormspreeSubmit as unknown as React.FormEventHandler<HTMLDivElement>}
-              >
-                <form onSubmit={handleFormspreeSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="bg-gray-50 border border-gray-100 rounded-2xl p-8 space-y-6">
 
-                  {/* Global error */}
-                  {state.errors && Array.isArray(state.errors) && state.errors.length > 0 && (
-                    <div className="bg-red-50 border border-red-200 text-red-700 px-5 py-4 rounded-xl text-sm font-medium">
-                      Something went wrong. Please try again or email us directly at faizanhafiz928@gmail.com
-                    </div>
-                  )}
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Name */}
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Full Name <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Jane Smith"
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-                      />
-                      <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm mt-1" />
-                    </div>
-
-                    {/* Email */}
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                        Email Address <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="jane@example.com"
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-                      />
-                      <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm mt-1" />
-                    </div>
+                {/* Error banner */}
+                {status === 'error' && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 px-5 py-4 rounded-xl text-sm font-medium">
+                    Something went wrong. Please try again or email us at{' '}
+                    <a href="mailto:faizanhafiz928@gmail.com" className="underline">faizanhafiz928@gmail.com</a>
                   </div>
+                )}
 
-                  {/* Subject */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Name */}
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Subject <span className="text-red-500">*</span>
+                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Full Name <span className="text-red-500">*</span>
                     </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={subject}
-                      onChange={(e) => setSubject(e.target.value)}
-                      required
+                    <input
+                      type="text" id="name" name="name"
+                      value={formData.name} onChange={handleChange}
+                      placeholder="Jane Smith" required
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-                    >
-                      <option value="" disabled>Select a subject...</option>
-                      <option value="General Inquiry">General Inquiry</option>
-                      <option value="Bug Report">Bug Report</option>
-                      <option value="Calculator Request">Calculator Request</option>
-                      <option value="Partnership / Advertising">Partnership / Advertising</option>
-                      <option value="Other">Other</option>
-                    </select>
-                    <ValidationError prefix="Subject" field="subject" errors={state.errors} className="text-red-500 text-sm mt-1" />
-                  </div>
-
-                  {/* Message */}
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Message <span className="text-red-500">*</span>
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Tell us how we can help..."
-                      rows={6}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
                     />
-                    <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm mt-1" />
                   </div>
 
-                  <button
-                    type="submit"
-                    disabled={state.submitting}
-                    className="w-full md:w-auto bg-blue-700 hover:bg-blue-800 disabled:bg-blue-400 disabled:cursor-not-allowed text-white font-semibold text-lg px-10 py-4 rounded-xl transition-colors duration-200 shadow-md flex items-center gap-2"
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Email Address <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="email" id="email" name="email"
+                      value={formData.email} onChange={handleChange}
+                      placeholder="jane@example.com" required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    />
+                  </div>
+                </div>
+
+                {/* Subject */}
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Subject <span className="text-red-500">*</span>
+                  </label>
+                  <select
+                    id="subject" name="subject"
+                    value={formData.subject} onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   >
-                    {state.submitting ? (
-                      <>
-                        <svg className="animate-spin h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
-                        </svg>
-                        Sending...
-                      </>
-                    ) : (
-                      'Send Message →'
-                    )}
-                  </button>
+                    <option value="" disabled>Select a subject...</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Bug Report">Bug Report</option>
+                    <option value="Calculator Request">Calculator Request</option>
+                    <option value="Partnership / Advertising">Partnership / Advertising</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
 
-                  <p className="text-sm text-gray-500">
-                    By submitting this form, you agree to our{' '}
-                    <span className="text-blue-600 cursor-pointer hover:underline">Privacy Policy</span>.
-                    We never share your information with third parties.
-                  </p>
+                {/* Message */}
+                <div>
+                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Message <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    id="message" name="message"
+                    value={formData.message} onChange={handleChange}
+                    placeholder="Tell us how we can help..."
+                    rows={6} required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
+                  />
+                </div>
 
-                </form>
-              </div>
+                <button
+                  type="submit"
+                  disabled={status === 'submitting'}
+                  className="w-full md:w-auto bg-blue-700 hover:bg-blue-800 disabled:bg-blue-400 disabled:cursor-not-allowed text-white font-semibold text-lg px-10 py-4 rounded-xl transition-colors duration-200 shadow-md flex items-center gap-2"
+                >
+                  {status === 'submitting' ? (
+                    <>
+                      <svg className="animate-spin h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                      </svg>
+                      Sending...
+                    </>
+                  ) : 'Send Message →'}
+                </button>
+
+                <p className="text-sm text-gray-500">
+                  By submitting this form, you agree to our{' '}
+                  <span className="text-blue-600 cursor-pointer hover:underline">Privacy Policy</span>.
+                  We never share your information with third parties.
+                </p>
+
+              </form>
             )}
           </section>
 
@@ -213,10 +229,7 @@ export default function ContactForm() {
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {faqs.map((faq, idx) => (
-                <div
-                  key={idx}
-                  className="bg-gray-50 border border-blue-100 rounded-xl shadow-sm overflow-hidden"
-                >
+                <div key={idx} className="bg-gray-50 border border-blue-100 rounded-xl shadow-sm overflow-hidden">
                   <button
                     type="button"
                     onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
@@ -231,9 +244,7 @@ export default function ContactForm() {
                     </svg>
                   </button>
                   {openFaq === idx && (
-                    <div className="px-6 pb-5 pt-1 text-gray-700 text-base leading-relaxed">
-                      {faq.a}
-                    </div>
+                    <div className="px-6 pb-5 pt-1 text-gray-700 text-base leading-relaxed">{faq.a}</div>
                   )}
                 </div>
               ))}
