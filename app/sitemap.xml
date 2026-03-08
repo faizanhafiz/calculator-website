@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://zenicalculator.com/</loc>
+    <loc>https://www.zenicalculator.com/</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,13 +11,13 @@
 
   <!-- About & Contact -->
   <url>
-    <loc>https://zenicalculator.com/about-us</loc>
+    <loc>https://www.zenicalculator.com/about-us</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/contact</loc>
+    <loc>https://www.zenicalculator.com/contact</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -25,55 +25,55 @@
 
   <!-- Finance Category -->
   <url>
-    <loc>https://zenicalculator.com/finance</loc>
+    <loc>https://www.zenicalculator.com/finance</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/compound</loc>
+    <loc>https://www.zenicalculator.com/finance/compound</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/emi</loc>
+    <loc>https://www.zenicalculator.com/finance/emi</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/future-value</loc>
+    <loc>https://www.zenicalculator.com/finance/future-value</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/interest</loc>
+    <loc>https://www.zenicalculator.com/finance/interest</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/loan</loc>
+    <loc>https://www.zenicalculator.com/finance/loan</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/mortgage</loc>
+    <loc>https://www.zenicalculator.com/finance/mortgage</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/retirement</loc>
+    <loc>https://www.zenicalculator.com/finance/retirement</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/finance/sip</loc>
+    <loc>https://www.zenicalculator.com/finance/sip</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -81,49 +81,49 @@
 
   <!-- Fitness & Health Category -->
   <url>
-    <loc>https://zenicalculator.com/fitness-health</loc>
+    <loc>https://www.zenicalculator.com/fitness-health</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/fitness-health/bmi-calculator</loc>
+    <loc>https://www.zenicalculator.com/fitness-health/bmi-calculator</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/fitness-health/body-fat-calculator</loc>
+    <loc>https://www.zenicalculator.com/fitness-health/body-fat-calculator</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/fitness-health/body-type-calculator</loc>
+    <loc>https://www.zenicalculator.com/fitness-health/body-type-calculator</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/fitness-health/calorie-calculator</loc>
+    <loc>https://www.zenicalculator.com/fitness-health/calorie-calculator</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/fitness-health/heart-rate</loc>
+    <loc>https://www.zenicalculator.com/fitness-health/heart-rate</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/fitness-health/macro-calculator</loc>
+    <loc>https://www.zenicalculator.com/fitness-health/macro-calculator</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/fitness-health/target-heart-rates</loc>
+    <loc>https://www.zenicalculator.com/fitness-health/target-heart-rates</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -131,61 +131,61 @@
 
   <!-- Math Category -->
   <url>
-    <loc>https://zenicalculator.com/math</loc>
+    <loc>https://www.zenicalculator.com/math</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/algebra</loc>
+    <loc>https://www.zenicalculator.com/math/algebra</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/area</loc>
+    <loc>https://www.zenicalculator.com/math/area</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/decimal</loc>
+    <loc>https://www.zenicalculator.com/math/decimal</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/equation-solver</loc>
+    <loc>https://www.zenicalculator.com/math/equation-solver</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/fractions</loc>
+    <loc>https://www.zenicalculator.com/math/fractions</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/linear</loc>
+    <loc>https://www.zenicalculator.com/math/linear</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/percentage</loc>
+    <loc>https://www.zenicalculator.com/math/percentage</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/perimeter</loc>
+    <loc>https://www.zenicalculator.com/math/perimeter</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/math/volume</loc>
+    <loc>https://www.zenicalculator.com/math/volume</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -193,313 +193,313 @@
 
   <!-- Other Calculators Category -->
   <url>
-    <loc>https://zenicalculator.com/other</loc>
+    <loc>https://www.zenicalculator.com/other</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/age</loc>
+    <loc>https://www.zenicalculator.com/other/age</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/bandwidth</loc>
+    <loc>https://www.zenicalculator.com/other/bandwidth</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/bra-size</loc>
+    <loc>https://www.zenicalculator.com/other/bra-size</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/btu</loc>
+    <loc>https://www.zenicalculator.com/other/btu</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/concrete</loc>
+    <loc>https://www.zenicalculator.com/other/concrete</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/conversion</loc>
+    <loc>https://www.zenicalculator.com/other/conversion</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/date</loc>
+    <loc>https://www.zenicalculator.com/other/date</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/day-counter</loc>
+    <loc>https://www.zenicalculator.com/other/day-counter</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/day-week</loc>
+    <loc>https://www.zenicalculator.com/other/day-week</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/density</loc>
+    <loc>https://www.zenicalculator.com/other/density</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/dew-point</loc>
+    <loc>https://www.zenicalculator.com/other/dew-point</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/dice</loc>
+    <loc>https://www.zenicalculator.com/other/dice</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/duration</loc>
+    <loc>https://www.zenicalculator.com/other/duration</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/electricity</loc>
+    <loc>https://www.zenicalculator.com/other/electricity</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/engine-hp</loc>
+    <loc>https://www.zenicalculator.com/other/engine-hp</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/fuel</loc>
+    <loc>https://www.zenicalculator.com/other/fuel</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/gdp</loc>
+    <loc>https://www.zenicalculator.com/other/gdp</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/golf</loc>
+    <loc>https://www.zenicalculator.com/other/golf</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/gpa</loc>
+    <loc>https://www.zenicalculator.com/other/gpa</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/grade</loc>
+    <loc>https://www.zenicalculator.com/other/grade</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/gravel</loc>
+    <loc>https://www.zenicalculator.com/other/gravel</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/heat-index</loc>
+    <loc>https://www.zenicalculator.com/other/heat-index</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/height</loc>
+    <loc>https://www.zenicalculator.com/other/height</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/hours</loc>
+    <loc>https://www.zenicalculator.com/other/hours</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/hp</loc>
+    <loc>https://www.zenicalculator.com/other/hp</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/ip-subnet</loc>
+    <loc>https://www.zenicalculator.com/other/ip-subnet</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/love</loc>
+    <loc>https://www.zenicalculator.com/other/love</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/mass</loc>
+    <loc>https://www.zenicalculator.com/other/mass</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/mileage</loc>
+    <loc>https://www.zenicalculator.com/other/mileage</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/mileage-calc</loc>
+    <loc>https://www.zenicalculator.com/other/mileage-calc</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/molarity</loc>
+    <loc>https://www.zenicalculator.com/other/molarity</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/molecular-weight</loc>
+    <loc>https://www.zenicalculator.com/other/molecular-weight</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/mulch</loc>
+    <loc>https://www.zenicalculator.com/other/mulch</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/ohms-law</loc>
+    <loc>https://www.zenicalculator.com/other/ohms-law</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/password</loc>
+    <loc>https://www.zenicalculator.com/other/password</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/resistor</loc>
+    <loc>https://www.zenicalculator.com/other/resistor</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/roman</loc>
+    <loc>https://www.zenicalculator.com/other/roman</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/roofing</loc>
+    <loc>https://www.zenicalculator.com/other/roofing</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/sleep</loc>
+    <loc>https://www.zenicalculator.com/other/sleep</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/speed</loc>
+    <loc>https://www.zenicalculator.com/other/speed</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/sqft</loc>
+    <loc>https://www.zenicalculator.com/other/sqft</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/stair</loc>
+    <loc>https://www.zenicalculator.com/other/stair</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/tile</loc>
+    <loc>https://www.zenicalculator.com/other/tile</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/time</loc>
+    <loc>https://www.zenicalculator.com/other/time</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/time-card</loc>
+    <loc>https://www.zenicalculator.com/other/time-card</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/time-zone</loc>
+    <loc>https://www.zenicalculator.com/other/time-zone</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/tip</loc>
+    <loc>https://www.zenicalculator.com/other/tip</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/tire</loc>
+    <loc>https://www.zenicalculator.com/other/tire</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/voltage-drop</loc>
+    <loc>https://www.zenicalculator.com/other/voltage-drop</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/weight</loc>
+    <loc>https://www.zenicalculator.com/other/weight</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenicalculator.com/other/wind-chill</loc>
+    <loc>https://www.zenicalculator.com/other/wind-chill</loc>
     <lastmod>2025-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
