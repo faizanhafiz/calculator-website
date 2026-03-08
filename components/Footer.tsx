@@ -6,9 +6,9 @@ import { usePathname } from 'next/navigation'
 export default function Footer() {
   const pathname = usePathname()
   const footerLinks = [
-    { href: '/about-us', label: 'About Us' },
+    { href: '/about', label: 'About Us' },
     { href: '/contact', label: 'Contact' },
-    { href: '/sitemap.xml', label: 'Sitemap' }
+    { href: '/sitemap', label: 'Sitemap' }
   ]
 
   return (

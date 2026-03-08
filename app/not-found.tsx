@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function NotFound() {
   return (
@@ -28,13 +27,8 @@ export default function NotFound() {
       </header>
 
       {/* Realistic Calculator Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20 z-0" 
-        style={{ 
-          backgroundImage: `url(/images/calculator-img.jpg)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+      <div
+        className="absolute inset-0 bg-[url('/images/calculator-img.jpg')] bg-cover bg-center opacity-20 z-0"
         aria-hidden="true"
       ></div>
 
