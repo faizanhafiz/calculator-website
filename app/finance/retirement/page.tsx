@@ -4,7 +4,7 @@ import StaticContent from './StaticContent';
 
 export const metadata: Metadata = {
   title: 'Retirement Calculator – How Much Do You Need to Retire? | zenicalculator',
-  description: 'Plan your retirement with our free calculator. Find out how much you need to save, whether you're on track, and how contributions affect your nest egg.',
+  description: "Plan your retirement with our free calculator. Find out how much you need to save, whether you're on track, and how contributions affect your nest egg.",
   keywords: ["retirement calculator", "retirement savings calculator", "how much to retire", "401k calculator"],
   openGraph: {
     title: 'Retirement Calculator – zenicalculator',

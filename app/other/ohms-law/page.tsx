@@ -3,8 +3,8 @@ import Calculator from './Calculator';
 import StaticContent from './StaticContent';
 
 export const metadata: Metadata = {
-  title: 'Ohm's Law Calculator | zenicalculator',
-  description: 'Calculate voltage, current, or resistance using Ohm's Law (V = I × R).',
+  title: "Ohm's Law Calculator | zenicalculator",
+  description: "Calculate voltage, current, or resistance using Ohm's Law (V = I × R).",
 };
 
 export default function Page() {

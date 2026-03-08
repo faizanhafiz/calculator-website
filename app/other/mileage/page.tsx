@@ -4,7 +4,7 @@ import StaticContent from './StaticContent';
 
 export const metadata: Metadata = {
   title: 'Gas Mileage Calculator | zenicalculator',
-  description: 'Calculate your vehicle's gas mileage (MPG).',
+  description: "Calculate your vehicle's gas mileage (MPG).",
 };
 
 export default function Page() {
