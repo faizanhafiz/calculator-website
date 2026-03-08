@@ -88,6 +88,17 @@ export const metadata = {
           {/* Add more categories similarly */}
         </section>
   
+
+        {/* SEO Content Section */}
+        <section className="bg-white rounded-xl shadow p-6 mt-8 space-y-4 max-w-4xl mx-auto">
+          <h2 className="text-2xl font-semibold text-blue-700">Free Financial Calculators</h2>
+          <p className="text-gray-700 text-lg">
+            Our financial calculators help you make informed decisions about loans, investments, interest rates, and retirement planning. Whether you are calculating your monthly mortgage payment, estimating how much your SIP will grow, or figuring out your EMI, our tools provide instant, accurate results.
+          </p>
+          <p className="text-gray-700 text-lg">
+            All calculators are free, require no signup, and work on all devices. Explore our complete collection of finance tools designed for individuals, students, and professionals.
+          </p>
+        </section>
         {/* Bottom Google Ad Placeholder */}
         <div className="w-full mt-8">
           <div className="bg-gray-200 h-28 flex items-center justify-center text-gray-500 rounded-lg">

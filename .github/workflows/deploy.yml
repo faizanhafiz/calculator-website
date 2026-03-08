@@ -1,12 +1,11 @@
 name: Deploy to Cloudflare Workers
 
 on:
-  pull_request:
+  push:
     
     branches:
       - prod
-    types:
-      - closed  
+      - feat/*
 
 jobs:
   deploy:
